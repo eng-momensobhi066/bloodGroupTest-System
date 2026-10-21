@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodTest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="icon" href="images/blood.jpg ">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center ">
+            <div class="col-md-8 text-center  p-4 rounded-4 shadow box bg-light" data-aos="zoom-in"
+                data-aos-duration="1500">
+                <div>
+                    <img class="img-fluid" src="images/blood.jpg" alt="">
+                    <h1 class=" text-primary mb-3">فحص وتحليل عينة <span>الدم🩸</span>
+
+                    </h1>
+                    <p>هذا المشروع عبارة عن محاكاة تعليمية لعملية فحص عينات الدم</p>
+                    <p>باستخدام التفاعلات مع المستضدات (A,B,D)</p>
+                </div>
+                <div>
+                    <div>
+                        <h3 class=" text-primary mb-3">كيف يتم الفحص ؟ </h3>
+                        <p> يتم وضع ثلاث قطرات من عينة الدم على شريحة اختبار. وتضاف اليها مضادات (مستضدات)
+                            مختلفة:AوBوD(العامل
+                            الرايزيسي). </p>
+                        <p>إذا حدث تفاعل او تكتل مع اي مستضد. فهذا يدل على وجوده في عينة الدم</p>
+                        <img src="images/blood2.jpg" class="img-fluid mb-3" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-primary"> نتائج الفحص:</h2>
+                        <p>اختر هل حدث تفاعل (تكتل) مع كل مستضد من المستضدات التالية :</p>
+
+                        <div class="row ">
+                            <div class="col-lg-4 mb-3 ">
+                                <h5 class="mb-3 fw-blod">ِِAntigen A</h5>
+                                <div class=" d-inline">
+                                    <input class="btn-check" type="radio" id="AAY" name="Ant1">
+                                    <label class="btn btn-outline-success" for="AAY">نعم</label>
+
+                                </div>
+                                <div class="d-inline">
+                                    <input class="btn-check" type="radio" id="AAN" name="Ant1">
+                                    <label class="btn btn-outline-danger" for="AAN">لا</label>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-lg-4 mb-3 ">
+                                <h5 class="mb-3 fw-blod">ِِAntigen B</h5>
+                                <div class="d-inline ">
+                                    <input class="btn-check" type="radio" id="BBY" text="radio" name="Ant2">
+                                    <label class="btn btn-outline-success" for="BBY">نعم</label>
+
+                                </div>
+                                <div class="d-inline">
+                                    <input class="btn-check" type="radio" id="BBN" name="Ant2">
+                                    <label class="btn btn-outline-danger" for="BBN">لا</label>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 mb-3 ">
+                                <h5 class="mb-3 fw-blod"> Antigen D (Rh) </h5>
+                                <div class="d-inline ">
+                                    <input class="btn-check" type="radio" id="DDY" name="Ant3">
+                                    <label class="btn btn-outline-success" for="DDY">نعم</label>
+
+                                </div>
+                                <div class="d-inline ">
+                                    <input class="btn-check" type="radio" id="DDN" name="Ant3">
+                                    <label class="btn btn-outline-danger" for="DDN">لا</label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="btn" class="btn btn-danger rounded-3 mt-4 px-3 py-2"> بدء الفحص ◀</button>
+                    <div class="alert alert-danger  my-4 rounded-3 shadow-sm border-0">
+                        <h5 class="alert-heading fw-blod ">تنبيه طبي هام ⚠</h5>
+                        <p class="mb-0 small text-muted">النظام يحاكي خطوات الفحص الحقيقة بشكل علمي صحيح, لكنه مصمم
+                            لأهداف تعليمية فقط. الفحص النهائي المعتمد يجب ان يتم تحت إشراف طبي مخبري. </p>
+                    </div>
+
+                    <p id="time" class="fw-blod alert alert-dark   rounded-4 p-4 text-success" style="display:none ;">
+                        جاري تحليل العينة
+                        <span id="timer" class="fw-blod">(5)</span> ثوان...
+                    </p>
+                    <tfoot class="p-2 mr-2  ">
+                        <p class=" text-light w-100  rounded-3 p-2  bg-primary">Designed & Developed with ❤️ by
+                            <a class="fw-blod text-white m-2 " href="https://www.linkedin.com/in/momen-skaik-898867445"
+                                target="_blank">ENG:MomenSobhiSkaik</a>
+                        </p>
+                    </tfoot>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/blood.js"></script>
+</body>
+
+</html>
